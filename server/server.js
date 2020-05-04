@@ -15,8 +15,14 @@ const server = http.createServer(app);
 const io = socketio.listen(server); // pass in a server instance into socket wrapper, every time client uses socket function it will therefore reference this server
 
 io.on("connection", (sock) => {
+  // for this particular socket connection, do the following:
   console.log("Someone has connected");
   sock.emit("message", "You have been connected.");
+
+  sock.on("message", (text) => {
+    // sock.emit just sends to a single particular client
+    io.emit("message", text); // io.emit sends to EVERYONE who is connected, including that who sent it
+  });
 });
 
 server.on("error", (err) => {

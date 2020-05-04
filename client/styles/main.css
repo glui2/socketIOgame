@@ -1,0 +1,59 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.rps-wrapper {
+    background-color:aliceblue;
+    width: 400px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: lightblue 
+}
+
+.rps-wrapper .button-wrapper {
+    text-align: center;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.rps-button-group {
+    margin: 5px auto; 
+    padding: auto;
+}
+
+.rps-wrapper #chat-form {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.rps-wrapper .rps-button {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#submit {
+    margin: 5px; 
+    border-radius: 5px;
+    background-color: paleturquoise; 
+}
+
+#events {
+    text-align: left;
+    list-style: none;
+    height: 80%;
+    margin: 0; 
+    padding: auto;
+    flex-grow: 1;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 5px;
+    font-size: small;  
+
+}

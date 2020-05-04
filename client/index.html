@@ -8,11 +8,15 @@
     <div class="rps-wrapper">
       <ul id="events"></ul>
       <div class="button-wrapper">
-        <input id="chat" />
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-        <button id="submit">Submit</button>
+        <form id="chat-form">
+          <input id="chat" />
+          <button class="submit-button" id="submit">Submit</button>
+        </form>
+        <div class="rps-button-group">
+          <button class="rps-button" id="rock">Rock</button>
+          <button class="rps-button" id="paper">Paper</button>
+          <button class="rps-button" id="scissors">Scissors</button>
+        </div>
       </div>
     </div>
     <script src="http://localhost:8080/socket.io/socket.io.js"></script>
