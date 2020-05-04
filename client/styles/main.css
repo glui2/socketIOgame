@@ -34,9 +34,21 @@ body {
 }
 
 .rps-wrapper .rps-button {
+    text-transform: uppercase; 
+    line-height: 25px; 
     margin: 5px;
+    padding: 5px 15px;
+    background-color: #eae9e9; 
+    border: none;
     border-radius: 5px;
+    box-shadow: none;
+    transition: all 150ms ease-in;
+    outline: none; 
 }
+
+.rps-button:hover {
+   background-color: paleturquoise;  
+ }
 
 #submit {
     margin: 5px; 
