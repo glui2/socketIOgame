@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Button } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
 import { ButtonGroup } from "@material-ui/core";
+import LivesComponent from "../components/LivesComponent";
 
 ////////////////////////     Methods     ////////////////////////////
 
